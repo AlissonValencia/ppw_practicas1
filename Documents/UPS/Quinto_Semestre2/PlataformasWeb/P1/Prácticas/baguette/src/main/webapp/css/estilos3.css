@@ -1,0 +1,209 @@
+/*
+    ESTILOS PARA BAGUETTE Y PASTEL
+    Basado en el wireframe de diseño y la estructura HTML
+*/
+
+/* --- Estilos Generales y Reseteo --- */
+body {
+    /* Fuente principal con serifa para un toque elegante */
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333;
+}
+
+main {
+    max-width: 1200px; /* Ancho máximo para el sitio web */
+    margin: 0 auto;
+    background-color: #fff; /* Fondo blanco para el contenido principal */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------------------------------- */
+/* --- HEADER (Cabecera) - Mantiene alineación Logo + Nombre --- */
+/* ------------------------------------------- */
+header {
+    background-color: #795548; /* Color marrón cálido (como el pan) */
+    color: white;
+    padding: 15px 20px; 
+    border-bottom: 5px solid #ffcc80; /* Tostado/dorado */
+    
+    display: flex;
+    align-items: center; 
+    text-align: center;
+}
+
+header img {
+    /* Estilo para el logo */
+    margin: 0;
+    margin-right: 20px; 
+    border: 1px solid #ffcc80; 
+    padding: 5px; 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em; 
+    line-height: 1.2;
+    flex-grow: 1; 
+    /* Usa la fuente con serifa para el encabezado */
+    font-family: 'Times New Roman', serif; 
+    font-weight: bold;
+}
+
+header h2, header h4 {
+    display: none; 
+}
+
+
+/* ------------------------------------------- */
+/* --- NAV (Navegación) - FUENTE ELEGANTIZADA --- */
+/* ------------------------------------------- */
+nav {
+    background-color: #ffcc80; /* Dorado claro */
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #795548; /* Marrón para el texto */
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    
+    /* CAMBIO CLAVE: Usamos la fuente elegante */
+    font-family: 'Times New Roman', serif; 
+    letter-spacing: 0.5px; /* Pequeño espaciado para mejor lectura en mayúsculas (opcional) */
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #ffb74d; /* Dorado más oscuro al pasar el ratón */
+    color: #fff;
+}
+
+/* --- CONTENIDO PRINCIPAL (div.content) --- */
+.content {
+    display: flex; /* Usamos Flexbox para las columnas */
+    padding: 20px;
+}
+
+/* --- SECTION (Contenido Central - Misión y Mapa) --- */
+section {
+    flex: 3; /* Ocupa 3 partes del espacio */
+    padding-right: 20px;
+}
+
+article {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px dashed #ccc; /* Línea punteada como en el wireframe */
+}
+
+article h3 {
+    color: #795548;
+    border-bottom: 2px solid #ffcc80;
+    padding-bottom: 5px;
+    /* Fuente elegante para los títulos de sección */
+    font-family: 'Times New Roman', serif; 
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    /* Contorno para las imágenes de artículo, como en el wireframe */
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+article iframe {
+    /* Estilo para el mapa */
+    border: 1px solid #ccc;
+    margin-top: 15px;
+}
+
+/* --- ASIDE (Barra Lateral - Desarrolladores) --- */
+aside {
+    flex: 1; /* Ocupa 1 parte del espacio (más estrecho) */
+    background-color: #f0f0f0; /* Fondo gris claro */
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+aside h3 {
+    color: #333;
+    margin-top: 0;
+    /* Fuente elegante para el título del aside */
+    font-family: 'Times New Roman', serif; 
+}
+
+aside a {
+    display: block;
+    margin-bottom: 10px;
+    color: #4b6cb7; /* Color azul para enlaces */
+    text-decoration: none;
+    /* Mantiene la fuente principal del body para la barra lateral */
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los iconos de LinkedIn/GitHub */
+aside p img {
+    margin-right: 10px;
+}
+
+/* --- FOOTER (Pie de Página) --- */
+footer {
+    background-color: #795548; /* Mismo color del header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre los iconos */
+}
+
+footer ul li {
+    display: inline;
+}
+
+/* Estilos para los iconos de redes sociales en el footer */
+footer ul li img {
+    width: 32px;
+    height: 32px;
+    /* Contorno para los iconos */
+    border: 1px solid #fff;
+    padding: 5px;
+}
+
+footer p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+}
+
+/* --- Media Queries para Responsividad (Opcional pero Recomendado) --- */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column; /* Apilar las columnas en dispositivos pequeños */
+    }
+    section {
+        padding-right: 0;
+    }
+    aside {
+        margin-top: 20px;
+    }
+}
