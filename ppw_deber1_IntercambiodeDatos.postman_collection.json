@@ -1,0 +1,122 @@
+{
+	"info": {
+		"_postman_id": "212b0d93-77e1-47a9-8137-c90967298379",
+		"name": "ppw_deber1_IntercambiodeDatos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19591645",
+		"_collection_link": "https://api-test-team-9662.postman.co/workspace/TalleresPPw~bc9c194d-b816-452c-9a68-c18816134b59/collection/19591645-212b0d93-77e1-47a9-8137-c90967298379?action=share&source=collection_link&creator=19591645"
+	},
+	"item": [
+		{
+			"name": "Crea Productos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Baguette Tradicional\",\r\n    \"tipo\": \"Pan\",\r\n    \"precio\": 1.50,\r\n    \"disponible\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crudcrud.com/api/9362928830e84dc5b5d647b6e9b84f85/products",
+					"protocol": "https",
+					"host": [
+						"crudcrud",
+						"com"
+					],
+					"path": [
+						"api",
+						"9362928830e84dc5b5d647b6e9b84f85",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Muestra Productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://crudcrud.com/api/9362928830e84dc5b5d647b6e9b84f85/products",
+					"protocol": "https",
+					"host": [
+						"crudcrud",
+						"com"
+					],
+					"path": [
+						"api",
+						"9362928830e84dc5b5d647b6e9b84f85",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualiza Productos",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Baguette de Masa Madre\",\r\n    \"tipo\": \"Pan\",\r\n    \"precio\": 2.20,\r\n    \"disponible\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://crudcrud.com/api/9362928830e84dc5b5d647b6e9b84f85/products/69066a3883629c03e8adeb05",
+					"protocol": "https",
+					"host": [
+						"crudcrud",
+						"com"
+					],
+					"path": [
+						"api",
+						"9362928830e84dc5b5d647b6e9b84f85",
+						"products",
+						"69066a3883629c03e8adeb05"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Elimina Productos",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://crudcrud.com/api/9362928830e84dc5b5d647b6e9b84f85/products/69066a3883629c03e8adeb05",
+					"protocol": "https",
+					"host": [
+						"crudcrud",
+						"com"
+					],
+					"path": [
+						"api",
+						"9362928830e84dc5b5d647b6e9b84f85",
+						"products",
+						"69066a3883629c03e8adeb05"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
