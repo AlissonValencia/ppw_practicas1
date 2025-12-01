@@ -1,0 +1,8 @@
+*.class
+/build/
+*.zip
+*.jar
+.project
+.classpath
+.settings/
+/src/main/webapp/WEB-INF/lib/
